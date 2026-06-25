@@ -269,7 +269,7 @@
         </div>
         <div class="chat-body">
             <p>Napišite svoje ime, datum rođenja, pitanje ili kod kupljenog A-bona.</p>
-            <textarea id="clientQuestion" placeholder="Npr. Ivana, 12.05.1988. Zanima me ljubav. Moj A-bon kod je: xxxx xxxx xxxx xxxx"></xxxx></textarea>
+            <textarea id="clientQuestion" placeholder="Npr. Ivana, 12.05.1988. Zanima me ljubav. Moj A-bon kod je: xxxx xxxx xxxx xxxx"></textarea>
             <button class="chat-send-btn" onclick="sendToWhatsApp()">Pošalji i započni chat</button>
         </div>
     </div>
@@ -280,9 +280,7 @@
 
     <script>
         function sendToWhatsApp() {
-            // !!! OVDJE UPIŠI BROJ MOBITELA SVOJE SUPRUGE (Zadrži format 385 i briši nulu s početka broja) !!!
             var mojBroj = "385917861346";
-           
             var tekstPoruke = document.getElementById("clientQuestion").value;
            
             if(tekstPoruke.trim() === "") {
@@ -294,3 +292,6 @@
             window.open("https://wa.me" + mojBroj + "?text=" + kodiraniTekst, "_blank");
         }
     </script>
+
+</body>
+</html>
