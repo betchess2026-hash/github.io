@@ -38,11 +38,12 @@
         .payment-methods { background-color: rgba(17, 8, 34, 0.9); padding: 20px; border-radius: 10px; border: 1px dashed #512da8; margin-top: 35px; text-align: center; font-size: 0.95em; backdrop-filter: blur(5px); }
         .abon-logo { color: #ff0055; font-weight: bold; }
         .highlight { color: #ffb703; font-weight: bold; }
-        .rules-section { background-color: rgba(17, 8, 34, 0.9); padding: 20px; border-radius: 12px; border: 1px solid #3c1e6d; margin-top: 40px; text-align: left; font-size: 0.9em; backdrop-filter: blur(5px); }
-        .rules-section h3 { color: #d1b3ff; text-align: center; margin-top: 0; margin-bottom: 15px; }
-        .rules-list { padding-left: 15px; margin: 0; }
-        .rules-list li { margin-bottom: 10px; line-height: 1.5; color: #c77dff; }
-        .rules-list strong { color: #e2daeb; }
+        .rules-section { background-color: rgba(17, 8, 34, 0.9); padding: 25px; border-radius: 12px; border: 1px solid #3c1e6d; margin-top: 40px; text-align: left; font-size: 0.92em; backdrop-filter: blur(5px); }
+        .rules-section h3 { color: #d1b3ff; text-align: center; margin-top: 0; margin-bottom: 20px; font-size: 1.4em; border-bottom: 1px solid #3c1e6d; padding-bottom: 10px; }
+        .rules-list { padding-left: 15px; margin: 0; list-style-type: none; }
+        .rules-list li { margin-bottom: 14px; line-height: 1.6; color: #d1b3ff; position: relative; padding-left: 20px; }
+        .rules-list li::before { content: "•"; color: #ffb703; font-weight: bold; font-size: 1.2em; position: absolute; left: 0; top: -2px; }
+        .rules-list strong { color: #ffffff; text-transform: uppercase; font-size: 0.9em; letter-spacing: 0.5px; }
         .chat-widget { position: fixed; bottom: 20px; right: 20px; width: 290px; background-color: #1c0f3a; border: 2px solid #b388ff; border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.8); overflow: hidden; font-size: 0.9em; z-index: 1000; }
         .chat-header { background: #512da8; color: white; padding: 12px; font-weight: bold; display: flex; align-items: center; gap: 8px; }
         .status-dot { width: 8px; height: 8px; background-color: #00e676; border-radius: 50%; display: inline-block; box-shadow: 0 0 8px #00e676; }
@@ -53,14 +54,11 @@
     </style>
 </head>
 <body>
-
     <header>
         <h1>Mystic Line</h1>
         <p class="subtitle">Profesionalni Astro & Tarot Chat Uživo</p>
     </header>
-
     <div class="container">
-        
         <h2 class="section-title">Područja i tehnike savjetovanja</h2>
         <p class="section-subtitle">Naš chat nudi duboke analize i odgovore kroz različite metode:</p>
         
@@ -74,7 +72,7 @@
         </div>
 
         <h2 class="section-title">Odaberite Paket Poruka</h2>
-        <p class="section-subtitle">Kupite A-bon i iskoristite poruke kada god želite. Što veći paket odaberete, dobivate više gratis poruka!</p>
+        <p class="section-subtitle">Kupite A-bon i iskoristite poruke kada god želite.</p>
         
         <div class="services">
             <div class="card">
@@ -115,21 +113,26 @@
 
         <div class="payment-methods">
             <h3>Kako platiti? Jednostavno i anonimno!</h3>
-            <p>1. Kupite <span class="abon-logo">A-bon</span> na bilo kojem kiosku (Tisak, iNovine) ili benzinskoj postaji.</p>
+            <p>1. Kupite <span class="abon-logo">A-bon</span> na bilo kojem kiosku ili benzinskoj postaji.</p>
             <p>2. Kliknite na gumb u kutu ekrana kako biste se povezali s nama na Viberu.</p>
-            <p>3. Pošaljite nam podatke (ime, datum rođenja, pitanje) i <span class="highlight">16-znamenkasti kod s bona</span>.</p>
+            <p>3. Pošaljite nam podatke i <span class="highlight">16-znamenkasti kod s bona</span>.</p>
         </div>
 
         <div class="rules-section">
             <h3>Pravilnik ponašanja i uvjeti chata</h3>
             <ul class="rules-list">
                 <li><strong>Radno vrijeme:</strong> Službeno radno vrijeme chata je svakim danom od <strong>08:00 do 20:00 sati</strong>. Poruke poslane izvan tog vremena bit će obrađene idući radni dan.</li>
-                <li><strong>Pisani oblik:</strong> Komunikacija se odvija strogo u pisanom obliku. Slanje glasovnih poruka, slika i videa je zabranjeno.</li>
-                <li><strong>Privatnost podataka:</strong> Svi vaši osobni podaci, datumi rođenja i pitanja tretiraju se s maksimalnom diskrecijom i nikada se ne dijele s trećim stranama.</li>
-                <li><strong>Odricanje odgovornosti:</strong> Astro i tarot savjetovanje služe isključivo u zabavne i smjernicom vođene svrhe. Korisnik samostalno donosi sve životne odluke.</li>
+                <li><strong>Pisani oblik:</strong> Komunikacija se odvija strogo u pisanom obliku. Slanje glasovnih poruka, slika i videa je strogo zabranjeno.</li>
+                <li><strong>Zabrana vulgarnosti:</strong> Strogo je zabranjeno slanje vulgarnog, uvredljivog ili seksualnog sadržaja.</li>
+                <li><strong>Blokiranje bez povrata:</strong> U slučaju kršenja pravila, korisnik se trajno blokira, a iznos paketa se ne vraća.</li>
+                <li><strong>Prva poruka:</strong> Inicijalna poruka s podacima i kodom A-bona računa se i oduzima od ukupnog broja poruka.</li>
+                <li><strong>Poruke upozorenja:</strong> Svaka poslana poruka upozorenja "nadoplatite svoj negativan saldo" oduzima se od ukupnog broja preostalih poruka.</li>
+                <li><strong>Vremenska neograničenost:</strong> Kupljeni paket poruka je vremenski neograničen i može se iskoristiti bilo kada.</li>
+                <li><strong>Zabranjeno pozivanje:</strong> Svaki pokušaj izravnog audio ili video poziva rezultirat će trenutačnim blokiranjem.</li>
+                <li><strong>Punoljetnost:</strong> Usluge Astro Chata smiju koristiti isključivo osobe starije od 18 godina, i to dokazuju upravo A-bonom.</li>
+                <li><strong>Zdravlje i pravo:</strong> Konzultacije nisu zamjena za medicinske i pravne savjete. Ne odgovaramo na pitanja o teškim bolestima.</li>
             </ul>
         </div>
-
     </div>
 
     <div class="chat-widget">
@@ -144,8 +147,7 @@
     </div>
 
     <footer>
-        <p>&copy; 2026 Mystic Line. Sva prava pridržana. Korisnička podrška dostupna unutar radnog vremena.</p>
+        <p>&copy; 2026 Mystic Line. Sva prava pridržana.</p>
     </footer>
-
 </body>
 </html>
